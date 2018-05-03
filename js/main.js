@@ -32,6 +32,16 @@
                     $ElmtFirstHr.addClass('largehr').removeClass('smallhr');
                     $ElmtThirdHr.removeClass('smallhr');
                 }
+
+                if ($window.width() < 1725) {
+                    $ElmtDiv.addClass('two-columns');
+                    $ElmtFirstHr.addClass('smallhr').removeClass('largehr');
+                    $ElmtThirdHr.addClass('smallhr');
+                } else {
+                    $ElmtDiv.removeClass('two-columns');
+                    $ElmtFirstHr.addClass('largehr').removeClass('smallhr');
+                    $ElmtThirdHr.removeClass('smallhr');
+                }
             }).trigger('resize');
         })(jQuery);
 
