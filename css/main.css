@@ -133,6 +133,11 @@ section {
     overflow: hidden;
 }
 
+.one-column {
+    width: 300px;
+    margin: 20px;
+}
+
 .largehr::after {
     content: "";
     /* This is necessary for the pseudo element to work. */

@@ -23,24 +23,23 @@
             $ElmtThirdHr = $('.nav div:nth-child(3)');
 
             $window.resize(function resize() {
-                if ($window.width() < 1725) {
+                var bwidth = $('body').width();
+                if (996 < bwidth < 1725) {
                     $ElmtDiv.addClass('two-columns');
                     $ElmtFirstHr.addClass('smallhr').removeClass('largehr');
                     $ElmtThirdHr.addClass('smallhr');
-                } else {
+                } else if (753 < bwidth < 996){
                     $ElmtDiv.removeClass('two-columns');
                     $ElmtFirstHr.addClass('largehr').removeClass('smallhr');
                     $ElmtThirdHr.removeClass('smallhr');
+                } else {
+                    
                 }
 
-                if ($window.width() < 1725) {
-                    $ElmtDiv.addClass('two-columns');
-                    $ElmtFirstHr.addClass('smallhr').removeClass('largehr');
-                    $ElmtThirdHr.addClass('smallhr');
+                if ($('body').width() < 1000) {
+                    //$ElmtDiv.toggleClass('one-column', 'two-columns');
                 } else {
-                    $ElmtDiv.removeClass('two-columns');
-                    $ElmtFirstHr.addClass('largehr').removeClass('smallhr');
-                    $ElmtThirdHr.removeClass('smallhr');
+
                 }
             }).trigger('resize');
         })(jQuery);
