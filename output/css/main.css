@@ -3,7 +3,7 @@
 }
 
 header {
-    height: 70px;
+    min-height: 70px;
     background-color: #278cc3
 }
 
@@ -15,6 +15,7 @@ img[alt="facebook"],
 img[alt="twitter"],
 img[alt="youtube"] {
     margin-left: 22px;
+    margin-bottom: 6px;
 }
 
 .input-group,
