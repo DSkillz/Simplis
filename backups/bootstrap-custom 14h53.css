@@ -1,0 +1,53 @@
+/* .container-fluid, [class*="row"], [class*="col"] {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0!important;
+    padding-left: 0!important;
+} */
+
+.force-gutters-y {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.form-control::-webkit-input-placeholder { color: white; }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: white; }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color: white; }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: white; }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: white; }  /* Microsoft Edge */
+
+.no-gutters-xy {
+    margin: 0;
+    padding: 0;
+}
+
+.small-gutters {
+    padding: 15px!important;
+}
+
+.small-gutters>[class*="col-"] {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.medium-gutters {
+    margin-right: -30px;
+    margin-left: -30px;
+}
+
+.medium-gutters>[class*="col-"] {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.large-gutters {
+    margin-right: -45px;
+    margin-left: -45px;
+}
+
+.large-gutters>[class*="col-"] {
+    padding-right: 45px;
+    padding-left: 45px;
+}

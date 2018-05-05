@@ -1,0 +1,180 @@
+.transparent {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+header {
+    min-height: 70px;
+    background-color: #278cc3
+}
+
+.midmargin {
+    margin: 0 42px 0 42px;
+}
+
+img[alt="facebook"],
+img[alt="twitter"],
+img[alt="youtube"] {
+    margin-left: 22px;
+    margin-bottom: 6px;
+}
+
+.input-group,
+input {
+    width: 470px;
+    font-size: 9pt !important;
+    color: white !important;
+}
+
+.fa-search {
+    color: whitesmoke;
+}
+
+#notif img {
+    margin: 0px 11px;
+    min-width: 15px;
+}
+
+img[alt="user"] {
+    min-width: 25px !important;
+}
+
+ul {
+    color: white;
+    margin: auto 0;
+    padding: 0;
+    width: 300px;
+}
+
+ul img {
+    padding-left: 12px;
+}
+
+nav li:nth-child(-n+5) {
+    background-color: #353535;
+}
+
+nav li:nth-last-child(-n+6) {
+    background-color: #3f3f3f;
+}
+
+nav li:last-child {
+    color: black;
+    background-color: white;
+}
+
+.row nav {
+    max-width: 250px!important;
+}
+
+.right li,
+.left li {
+    /* fixe la hauteur et centre verticalement */
+    height: 57px;
+    line-height: 57px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.right li:nth-child(9) {
+    line-height: 17px;
+    padding-top: 12px;
+}
+
+.left ul {
+    text-align: center;
+}
+
+.left li:last-child {
+    text-align: end;
+    padding-right: 5px;
+}
+
+/* left nav layout handling */
+
+.active,
+.left li:hover {
+    background-color: #079dee !important;
+}
+
+/************************/
+
+/** SECTION 
+/************************/
+
+section {
+    background-color: bisque;
+    width: 90% !important;
+    color: #000;
+}
+
+.nav {
+    min-height: 61px;
+}
+
+.nav.row {
+    margin-top: 2em;
+}
+
+.nav div {
+    -ms-flex: 0 0 236px;
+    flex: 0 0 280px;
+    height: 61px;
+    margin: 20px;
+    background-color: #eeeeee;
+    min-width: 280px;
+    cursor: pointer;
+}
+
+/* section nav layout */
+
+.two-columns {
+    width: 650px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.largehr::after {
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    position: absolute;
+    width: 1240px;
+    bottom: 0;
+    left: 0;
+    border-bottom: solid 1px #d5d5d5;
+    z-index: 3;
+}
+
+.midhr::after {
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    position: absolute;
+    width: 600px;
+    bottom: 0;
+    left: 0;
+    border-bottom: solid 1px #d5d5d5;
+    z-index: 3;
+}
+
+smallhr::after {
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    position: absolute;
+    width: 280px;
+    bottom: 0;
+    left: 0;
+    border-bottom: solid 1px #d5d5d5;
+    z-index: 3;
+}
+
+
+/* section recap layout */
+
+.recap div {
+    flex: 0 0 500px;
+}
+
+/* generic styles */
+
+.hidden {
+    display: none;
+}

@@ -7,10 +7,6 @@ header {
     background-color: #278cc3
 }
 
-img[alt="logo"] {
-    margin: 0 42px 0 42px;
-}
-
 img[alt="facebook"],
 img[alt="twitter"],
 img[alt="youtube"] {
@@ -62,8 +58,12 @@ nav li:last-child {
     background-color: white;
 }
 
-.row nav {
+/* .row nav {
     max-width: 250px!important;
+} */
+
+.sm {
+    max-width: 70px;
 }
 
 .right li,
@@ -103,7 +103,6 @@ nav li:last-child {
 
 section {
     background-color: bisque;
-    width: 90% !important;
     color: #000;
 }
 
@@ -133,11 +132,6 @@ section {
     overflow: hidden;
 }
 
-.one-column {
-    width: 300px;
-    margin: 20px;
-}
-
 .largehr::after {
     content: "";
     /* This is necessary for the pseudo element to work. */
@@ -149,7 +143,7 @@ section {
     z-index: 3;
 }
 
-.smallhr::after {
+.midhr::after {
     content: "";
     /* This is necessary for the pseudo element to work. */
     position: absolute;
@@ -160,6 +154,18 @@ section {
     z-index: 3;
 }
 
+smallhr::after {
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    position: absolute;
+    width: 280px;
+    bottom: 0;
+    left: 0;
+    border-bottom: solid 1px #d5d5d5;
+    z-index: 3;
+}
+
+
 /* section recap layout */
 
 .recap div {
@@ -169,5 +175,25 @@ section {
 /* generic styles */
 
 .hidden {
-    display: none;
+    display: none!important;
+}
+
+/* 576, 768, 992, 1200 */
+
+@media (max-width: 576px) {
+    .midmargin {
+        margin: 0 42px 0 42px;
+    }
+}
+
+@media (max-width: 992px) { /* inf. à 992 */
+    .sidebar {
+        max-width: 70px;
+    }
+}
+
+@media (min-width: 992px) { /* sup. à 992 */
+    .sidebar {
+        max-width: 250px;
+    }
 }
