@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     height: 100%;
     overflow-x: hidden;
 }
@@ -6,4 +7,23 @@ html, body {
 h5 {
     font-size: 1.1em;
     line-height: 0.6em;
+}
+
+.card {
+    width: 420px;
+}
+
+.card-body {
+    padding-bottom: 10px;
+}
+
+.blank {
+    position: relative;
+}
+
+.v-separator {
+    position: absolute;
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
 }

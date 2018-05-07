@@ -23,7 +23,7 @@ $(window).setBreakpoints({
         768,  // bootstrap bp
         992,  // bootstrap bp
         1200, // bootstrap bp
-        1616  // custom
+        1573  // custom
     ]
 });
 
@@ -63,17 +63,19 @@ $(window).bind('exitBreakpoint992', function () {
 
 });
 
-$(window).bind('enterBreakpoint1616', function () {
+$(window).bind('enterBreakpoint1573', function () {
     $ElmtDiv.removeClass('two-columns one-column')
     $ElmtFirstHr.addClass('largehr').removeClass('midhr smallhr');
     $ElmtThirdHr.removeClass('midhr');
     $("header img:first").addClass('midmargin');
 });
 
-$(window).bind('exitBreakpoint1616', function () {
+$(window).bind('exitBreakpoint1573', function () {
     $ElmtDiv.addClass('two-columns');
     $ElmtDiv.removeClass('one-column');
     $ElmtFirstHr.addClass('midhr').removeClass('largehr');
     $('.nav div').removeClass('smallhr')
     $ElmtThirdHr.addClass('midhr');
 });
+
+// procomp nth last child -n+3

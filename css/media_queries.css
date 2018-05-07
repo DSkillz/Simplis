@@ -1,0 +1,88 @@
+/* xs 576 sm , sm 768 md, md 992 lg, lg 1200 xl */
+
+@media (max-width: 477px) {
+    .proquo span,
+    .history span {
+        display: block;
+        margin: 15 0px;
+    }
+    .history i {
+        margin-bottom: 6px;
+    }
+}
+
+@media (max-width: 577px) {
+    .midmargin {
+        margin: 0 42px 0 42px;
+    }
+
+    .contact_wrapper {
+        float: none!important;
+    }
+
+    .card {
+        width: 340px;
+        margin: 0 auto;
+    }
+
+    .recap div:first-child {
+        max-width: 340px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    /* inf. à 992 */
+    .sidebar {
+        max-width: 70px;
+    }
+}
+
+/* @media (max-width: 992px) {
+    .sidebar {
+        min-width: 57px;
+        max-width: 57px;
+    }
+
+    .right {
+        display: none;
+    }
+} */
+
+@media (max-width: 1174px) {
+    .rowrecap .card {
+        float: none;
+    }
+}
+
+@media (max-width: 1214px) {
+    .recap {
+        margin: 0 auto;
+        max-width: 420px;
+    }
+
+    .recap .card {
+        float: none!important;
+        height: 187px;
+    }
+/* 
+    .rowrecap .card {
+        left: 45px;
+    } */
+}
+
+@media (max-width: 1640px) {
+    .procomp {
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1641px) {
+    .procomp {
+        justify-content: space-between;
+    }
+
+    .third {
+        margin-right: 15px;
+    } 
+}

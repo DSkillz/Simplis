@@ -1,0 +1,23 @@
+{
+  "name": "simplis",
+  "version": "1.0.0",
+  "description": "une app pour des assurances à des auto-entrepreunerus :)",
+  "main": "index.js",
+  "dependencies": {
+    "live-server": "^1.2.0",
+    "watch": "latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oracle63/Simplis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oracle63/Simplis/issues"
+  },
+  "homepage": "https://github.com/oracle63/Simplis#readme"
+}
