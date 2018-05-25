@@ -112,6 +112,10 @@ nav li:last-child {
     padding-top: 12px;
 }
 
+.left li {
+    width: 57px;
+}
+
 .left ul {
     text-align: center;
 }

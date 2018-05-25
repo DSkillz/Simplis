@@ -1,4 +1,40 @@
 /* xs 576 sm , sm 768 md, md 992 lg, lg 1200 xl */
+@media (max-width: 397px) {
+    main {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        min-width: 100%!important;
+        padding-right: 0;
+    }
+
+    .left, .left ul {
+        width: 100%!important;
+        height: 47px!important;
+        display: inline-flex;
+    }
+
+    .left li {
+        height: 47px!important;
+    }
+
+    .left li:last-child {
+        display: none;
+    }
+
+    .active {
+        background-color: none;
+    }
+
+    .row.nav {
+        margin-top: 0.7em!important;
+    }
+
+    .left img {
+        vertical-align: baseline;
+    }
+}
 
 @media (max-width: 477px) {
     .proquo span,
@@ -12,6 +48,10 @@
 }
 
 @media (max-width: 577px) {
+.procomp h5, .proquo h5, .history h5 {
+    line-height: 0.93em;
+}
+
     .midmargin {
         margin: 0 42px 0 42px;
     }
@@ -21,7 +61,7 @@
     }
 
     .card {
-        width: 340px;
+        width: 300px;
         margin: 0 auto;
     }
 
@@ -32,13 +72,6 @@
 }
 
 @media (max-width: 992px) {
-    /* inf. à 992 */
-    .sidebar {
-        max-width: 70px;
-    }
-}
-
-/* @media (max-width: 992px) {
     .sidebar {
         min-width: 57px;
         max-width: 57px;
@@ -47,7 +80,11 @@
     .right {
         display: none;
     }
-} */
+
+    section {
+        width: 85%!important;
+    }
+}
 
 @media (max-width: 1174px) {
     .rowrecap .card {
