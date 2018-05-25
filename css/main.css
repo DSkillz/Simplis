@@ -135,6 +135,7 @@ nav li:last-child {
 
 section {
     color: #000;
+    margin: 0 auto;
 }
 
 .nav {
@@ -209,6 +210,20 @@ smallhr::after {
     margin-right: 15px;
     position: relative;
     top: -5px;
+}
+
+.proquo tr td:last-child {
+    float: right;
+    text-align: right;
+}
+
+.proquo td {
+    border: none;
+}
+
+.proquo tr {
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
 }
 
 /* section protect quotidienne */
