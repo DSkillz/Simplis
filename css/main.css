@@ -63,10 +63,6 @@ ul {
     width: 193px;
 }
 
-ul img {
-    /*! padding-left: 12px; */
-}
-
 .sidebar {
     background-color: #353535;
     min-width: 250px;
@@ -256,6 +252,7 @@ table img {
 }
 
 .rotate {
+    transform: rotate(-90deg);
     /* Safari */
     -webkit-transform: rotate(-90deg);
     /* Firefox */

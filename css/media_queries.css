@@ -36,6 +36,16 @@
     }
 }
 
+@media (max-width: 407px) {
+    .v-separator {
+        left: -3px;
+    }
+
+    img[alt="twitter"], img[alt="youtube"] {
+        margin-left: 8px;
+    }
+}
+
 @media (max-width: 477px) {
     .proquo span,
     .history span {
