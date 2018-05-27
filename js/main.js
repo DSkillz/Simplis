@@ -10,7 +10,7 @@
             $(".left li:nth(" + index + ")").toggleClass('active');
         });
 
-        $(".nav div").hover(function () {
+        $(".row.nav div").hover(function () {
             $(this).toggleClass('active');
         });
 

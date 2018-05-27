@@ -44,7 +44,6 @@ $(window).bind('enterBreakpoint768', function () {
 
 $(window).bind('exitBreakpoint768', function () {
     $ElmtDiv.removeClass('two-columns');
-    $ElmtDiv.addClass('one-column');
     $('.nav div').removeClass('midhr largehr').addClass('smallhr');
     $("header img:first").removeClass('midmargin');
 });
@@ -53,7 +52,6 @@ $(window).bind('exitBreakpoint768', function () {
 $(window).bind('enterBreakpoint992', function () {
     // gestion des 4 div de la nav
     $ElmtDiv.addClass('two-columns');
-    $ElmtDiv.removeClass('one-column');
     $ElmtFirstHr.addClass('midhr').removeClass('largehr');
     $('.nav div').removeClass('smallhr')
     $ElmtThirdHr.addClass('midhr');
@@ -64,7 +62,7 @@ $(window).bind('exitBreakpoint992', function () {
 });
 
 $(window).bind('enterBreakpoint1573', function () {
-    $ElmtDiv.removeClass('two-columns one-column')
+    $ElmtDiv.removeClass('two-columns')
     $ElmtFirstHr.addClass('largehr').removeClass('midhr smallhr');
     $ElmtThirdHr.removeClass('midhr');
     $("header img:first").addClass('midmargin');
@@ -72,7 +70,6 @@ $(window).bind('enterBreakpoint1573', function () {
 
 $(window).bind('exitBreakpoint1573', function () {
     $ElmtDiv.addClass('two-columns');
-    $ElmtDiv.removeClass('one-column');
     $ElmtFirstHr.addClass('midhr').removeClass('largehr');
     $('.nav div').removeClass('smallhr')
     $ElmtThirdHr.addClass('midhr');

@@ -82,7 +82,17 @@
     .recap div:first-child {
         max-width: 340px;
     }
+    .proquo .col-xl-7 {
+        min-width: inherit;
+    }
+}
 
+@media (max-width: 768px) {
+    section > div:first {
+            width: 650px;
+    margin: auto;
+    overflow: hidden;
+    }
 }
 
 @media (max-width: 992px) {
